@@ -1,0 +1,32 @@
+DOC PYTHON/DJANGO
+
+# CREAR ENTORNO VIRTUAL
+## Windows
+> python -m venv .env
+# Activar entono virtual
+> .env/Scripts/activate
+# Desactivar entorno virtual
+> .env/Scripts/deactivate
+
+## Ubuntu
+$ python3 -m venv .env
+# Activar entono virtual
+$ source .env/bin/activate
+# Desactivar entorno virtual
+$ deactivate
+
+## Mac
+python3 -m venv .env
+# Activar entono virtual
+source .env/bin/activate
+# Desactivar entorno virtual
+deactivate
+
+# CORRER SERVER
+python3 manage.py runserver
+
+# CREAR LA ORDEN PARA LA CREACIÓN DE LA TABLA
+python3 manage.py migrate
+
+# MIGRACIÓN A LA BASE DE DATOS
+python3 manage.py makemigrations
