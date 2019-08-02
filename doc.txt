@@ -30,3 +30,7 @@ python3 manage.py migrate
 
 # MIGRACIÓN A LA BASE DE DATOS
 python3 manage.py makemigrations
+
+
+# DEBUG POR CONSOLA
+import pdb; pdb.set_trace()
