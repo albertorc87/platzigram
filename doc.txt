@@ -22,13 +22,16 @@ source .env/bin/activate
 # Desactivar entorno virtual
 deactivate
 
+#Después de instalar por primera vez el entorno de desarrollo hay que instalar DJANGO
+pip3 install Django
+
 # CORRER SERVER
 python3 manage.py runserver
 
-# CREAR LA ORDEN PARA LA CREACIÓN DE LA TABLA
+# MIGRACIÓN A LA BASE DE DATOS
 python3 manage.py migrate
 
-# MIGRACIÓN A LA BASE DE DATOS
+# CREAR LA ORDEN PARA LA CREACIÓN DE LA TABLA
 python3 manage.py makemigrations
 
 
