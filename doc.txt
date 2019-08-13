@@ -25,11 +25,11 @@ deactivate
 # CORRER SERVER
 python3 manage.py runserver
 
-# CREAR LA ORDEN PARA LA CREACIÓN DE LA TABLA
-python3 manage.py migrate
+# CREAR LA ORDEN PARA LA CREACIÓN/MODIFICACIÓN DE LA TABLA
+python3 manage.py makemigrations
 
 # MIGRACIÓN A LA BASE DE DATOS
-python3 manage.py makemigrations
+python3 manage.py migrate
 
 
 # DEBUG POR CONSOLA
